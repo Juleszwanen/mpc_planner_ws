@@ -11,7 +11,7 @@ vcs import < planner.repos src --recursive
 echo "Done cloning repositories."
 
 # Switch to ROS1 mode
-echo "Switching to ROS 1 ..."
+echo "Switching to ROS 2 ..."
 cd src
 cd mpc_planner
 python3 switch_to_ros.py 2
@@ -29,7 +29,7 @@ cd pedestrian_simulator
 python3 switch_to_ros.py 2
 cd ..
 cd ..
-echo "Done, all repos are in ROS1 mode."
+echo "Done, all repos are in ROS2 mode."
 
 # Install Acados
 if [ ! -d "/workspace/acados/build" ]; then
