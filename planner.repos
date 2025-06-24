@@ -30,7 +30,6 @@ repositories:
     asr_rapidxml:
         type: git
         url: https://github.com/oscardegroot/asr_rapidxml.git
-        version: 16d1f87d7d5230995f72491d2b2da545065ebc08
     decomp_util:
         type: git
         url: https://github.com/oscardegroot/DecompUtil.git
