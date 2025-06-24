@@ -1,5 +1,5 @@
 {
-    "name": "ROS1 Noetic Development",
+    "name": "ROS2 Humble Development",
     "dockerFile": "Dockerfile",
     "context": "..",
     "workspaceFolder": "/workspace",
@@ -10,31 +10,34 @@
     "customizations": {
         "vscode": {
             "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-        },
-        "extensions": [
-            "ms-vscode.cpptools",
-            "ms-python.python",
-            "ms-azuretools.vscode-docker",
-            "ms-iot.vscode-ros",
-            "ms-vscode.cpptools",
-            "ms-vscode.cpptools-extension-pack",
-            "ms-vscode.cmake-tools"
-        ]}
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "ms-azuretools.vscode-docker",
+                "ms-iot.vscode-ros",
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools"
+            ]
+        }
     },
     "remoteEnv": {
-        "DISPLAY": "${localEnv:DISPLAY}"
+        "DISPLAY": "${localEnv:DISPLAY}",
+        "ROS_DISTRO": "humble"
     },
     "runArgs": [
-		"--network=host",
-        "--env", "DISPLAY=${localEnv:DISPLAY}",
-		"--cap-add=SYS_PTRACE",
-		"--security-opt=seccomp:unconfined",
-		"--security-opt=apparmor:unconfined",
-		"--volume=/dev/input:/dev/input",
-		"--volume=/etc/localtime:/etc/localtime",
-		"--ipc=host",
-        "--runtime=nvidia", // Comment if no nvidia runtime is available
-		"--privileged"
+        "--network=host",
+        "--env",
+        "DISPLAY=${localEnv:DISPLAY}",
+        "--cap-add=SYS_PTRACE",
+        "--security-opt=seccomp:unconfined",
+        "--security-opt=apparmor:unconfined",
+        "--volume=/dev/input:/dev/input",
+        "--volume=/etc/localtime:/etc/localtime",
+        "--ipc=host",
+        //"--runtime=nvidia", // Comment if no nvidia runtime is available
+        "--privileged"
     ]
 }

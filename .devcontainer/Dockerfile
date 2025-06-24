@@ -1,5 +1,5 @@
 # catkin_ws/.devcontainer/Dockerfile
-FROM osrf/ros:noetic-desktop-full
+FROM osrf/ros:humble-desktop
 
 ARG USERNAME=r2c1
 ARG USER_UID=1000
@@ -25,13 +25,12 @@ RUN apt-get update && apt-get install -y \
     python3-colcon-common-extensions \
     python3-vcstool \
     python3-wstool \
-    python3-catkin-tools \
     python3.8-venv \
     iproute2 \
     && rm -rf /var/lib/apt/lists/*
 
 # Setup ROS environment
-RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 RUN echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/workspace/acados/lib" >> /root/.bashrc
 RUN echo "export ACADOS_SOURCE_DIR=/workspace/acados" >> /root/.bashrc
 

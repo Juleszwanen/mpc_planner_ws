@@ -6,7 +6,7 @@ clear
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/workspace/acados/lib"
 export ACADOS_SOURCE_DIR="/workspace/acados"
 
-. /opt/ros/noetic/setup.sh
+. /opt/ros/humble/setup.sh
 
 # Source the workspace if it exists
 if [ -f /workspace/devel/setup.sh ]; then
@@ -36,7 +36,18 @@ else
   fi
 fi
 
-BUILD_TYPE=RelWithDebInfo # Release, Debug, RelWithDebInfo, MinSizeRel
-catkin config --cmake-args -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DPYTHON_VERSION=3
+# BUILD_TYPE=RelWithDebInfo # Release, Debug, RelWithDebInfo, MinSizeRel
+# catkin config --cmake-args -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DPYTHON_VERSION=3
 
-catkin build mpc_planner_$1
+# catkin build mpc_planner_$1
+
+# configure and build with colcon
+# (you can pass extra --cmake-args as needed)
+export BUILD_TYPE=RelWithDebInfo
+source /opt/ros/humble/setup.bash
+colcon build \
+  --packages-select mpc_planner_$1 \
+  --install-base install/$BUILD_TYPE \
+  --cmake-args \
+    -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+    -DPYTHON_VERSION=3

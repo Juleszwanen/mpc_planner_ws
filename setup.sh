@@ -14,19 +14,19 @@ echo "Done cloning repositories."
 echo "Switching to ROS 1 ..."
 cd src
 cd mpc_planner
-python3 switch_to_ros.py 1
+python3 switch_to_ros.py 2
 cd ..
 
 cd ros_tools
-python3 switch_to_ros.py 1
+python3 switch_to_ros.py 2
 cd ..
 
 cd guidance_planner
-python3 switch_to_ros.py 1
+python3 switch_to_ros.py 2
 cd ..
 
 cd pedestrian_simulator
-python3 switch_to_ros.py 1
+python3 switch_to_ros.py 2
 cd ..
 cd ..
 echo "Done, all repos are in ROS1 mode."
