@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
     python3-colcon-common-extensions \
     python3-vcstool \
     python3-wstool \
-    python3.8-venv \
+    python3-venv \
     iproute2 \
     && rm -rf /var/lib/apt/lists/*
 
