@@ -95,5 +95,6 @@ echo "Done."
 
 # Install dependencies
 sudo apt-get update -y
-rosdep update
+# include the end of life distributions otherwise when building the packages dependency build errors occur
+rosdep update --include-eol-distros
 rosdep install -y -r --from-paths src --ignore-src --rosdistro $ROS_DISTRO
