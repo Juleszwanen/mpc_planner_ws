@@ -1,0 +1,22 @@
+[0mCMake Deprecation Warning at external/blasfeo/CMakeLists.txt:36 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at external/hpipm/CMakeLists.txt:36 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYTHON_VERSION
+
+[0m

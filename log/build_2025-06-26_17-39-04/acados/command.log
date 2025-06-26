@@ -1,0 +1,6 @@
+Invoking command in '/workspace/build/acados': /usr/bin/cmake /workspace/src/acados -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/acados
+Invoked command in '/workspace/build/acados' returned '0': /usr/bin/cmake /workspace/src/acados -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/acados
+Invoking command in '/workspace/build/acados': /usr/bin/cmake --build /workspace/build/acados -- -j12 -l12
+Invoked command in '/workspace/build/acados' returned '0': /usr/bin/cmake --build /workspace/build/acados -- -j12 -l12
+Invoking command in '/workspace/build/acados': /usr/bin/cmake --install /workspace/build/acados
+Invoked command in '/workspace/build/acados' returned '0': /usr/bin/cmake --install /workspace/build/acados

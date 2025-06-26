@@ -1,0 +1,142 @@
+[0.015s] Invoking command in '/workspace/build/guidance_planner': AMENT_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /workspace/src/guidance_planner -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/guidance_planner
+[0.107s] -- The C compiler identification is GNU 11.4.0
+[0.335s] -- The CXX compiler identification is GNU 11.4.0
+[0.373s] -- Detecting C compiler ABI info
+[0.677s] -- Detecting C compiler ABI info - done
+[0.696s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.697s] -- Detecting C compile features
+[0.697s] -- Detecting C compile features - done
+[0.702s] -- Detecting CXX compiler ABI info
+[0.830s] -- Detecting CXX compiler ABI info - done
+[0.851s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.852s] -- Detecting CXX compile features
+[0.853s] -- Detecting CXX compile features - done
+[1.536s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[1.898s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[1.900s] -- Found OpenMP: TRUE (found version "4.5")  
+[1.915s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.918s] -- Checking for module 'gsl'
+[1.964s] --   Found gsl, version 2.7.1
+[2.099s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.567s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.704s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.769s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.782s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.796s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.827s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.846s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.919s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.923s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.034s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.070s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.132s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.144s] -- Looking for pthread.h
+[3.241s] -- Looking for pthread.h - found
+[3.242s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.409s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.413s] -- Found Threads: TRUE  
+[3.530s] -- Found ros_tools: 1.0.0 (/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/cmake)
+[3.844s] -- Configuring done
+[3.885s] -- Generating done
+[3.888s] [33mCMake Warning:
+[3.888s]   Manually-specified variables were not used by the project:
+[3.888s] 
+[3.888s]     PYTHON_VERSION
+[3.888s] 
+[3.888s] [0m
+[3.901s] -- Build files have been written to: /workspace/build/guidance_planner
+[3.913s] Invoked command in '/workspace/build/guidance_planner' returned '0': AMENT_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /workspace/src/guidance_planner -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/guidance_planner
+[3.915s] Invoking command in '/workspace/build/guidance_planner': AMENT_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /workspace/build/guidance_planner -- -j12 -l12
+[4.005s] [  5%] [32mBuilding CXX object CMakeFiles/guidance_planner_homotopy.dir/src/homotopy_comparison/uvd.cpp.o[0m
+[4.007s] [ 10%] [32mBuilding CXX object CMakeFiles/guidance_planner_homotopy.dir/src/homotopy_comparison/homology.cpp.o[0m
+[4.007s] [ 15%] [32mBuilding CXX object CMakeFiles/guidance_planner_homotopy.dir/src/homotopy_comparison/winding_angle.cpp.o[0m
+[12.408s] [ 20%] [32m[1mLinking CXX shared library libguidance_planner_homotopy.so[0m
+[12.679s] [ 20%] Built target guidance_planner_homotopy
+[12.709s] [ 30%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/global_guidance.cpp.o[0m
+[12.713s] [ 30%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/graph.cpp.o[0m
+[12.713s] [ 35%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/config.cpp.o[0m
+[12.713s] [ 40%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/types.cpp.o[0m
+[12.713s] [ 45%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/prm.cpp.o[0m
+[12.714s] [ 50%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/connection.cpp.o[0m
+[12.718s] [ 60%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/paths.cpp.o[0m
+[12.718s] [ 55%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/graph_search.cpp.o[0m
+[12.721s] [ 65%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/node.cpp.o[0m
+[12.728s] [ 70%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/sampler.cpp.o[0m
+[12.731s] [ 75%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/cubic_spline.cpp.o[0m
+[12.758s] [ 80%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/environment.cpp.o[0m
+[42.300s] [ 85%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/third_party/dubins.cpp.o[0m
+[42.662s] [ 90%] [32m[1mLinking CXX shared library libguidance_planner.so[0m
+[43.328s] [ 90%] Built target guidance_planner
+[43.357s] [ 95%] [32mBuilding CXX object CMakeFiles/example.dir/src/ros2_example.cpp.o[0m
+[50.645s] [100%] [32m[1mLinking CXX executable example[0m
+[50.910s] [100%] Built target example
+[50.926s] Invoked command in '/workspace/build/guidance_planner' returned '0': AMENT_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /workspace/build/guidance_planner -- -j12 -l12
+[50.928s] Invoking command in '/workspace/build/guidance_planner': AMENT_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /workspace/build/guidance_planner
+[50.937s] -- Install configuration: "RelWithDebInfo"
+[50.937s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/lib/libguidance_planner_homotopy.so
+[50.942s] -- Set runtime path of "/workspace/install/RelWithDebInfo/guidance_planner/lib/libguidance_planner_homotopy.so" to ""
+[50.942s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/lib/libguidance_planner.so
+[50.967s] -- Set runtime path of "/workspace/install/RelWithDebInfo/guidance_planner/lib/libguidance_planner.so" to ""
+[50.968s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/lib/guidance_planner/example
+[50.971s] -- Set runtime path of "/workspace/install/RelWithDebInfo/guidance_planner/lib/guidance_planner/example" to ""
+[50.971s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner
+[50.971s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner
+[50.971s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/homotopy_comparison
+[50.971s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/homotopy_comparison/homotopy_comparison.h
+[50.971s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/homotopy_comparison/winding_angle.h
+[50.971s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/homotopy_comparison/uvd.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/homotopy_comparison/homology.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/reconfigure.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/global_guidance.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/types
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/types/node.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/types/paths.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/types/space_time_point.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/types/type_define.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/types/types.h
+[50.972s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/types/connection.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/third_party
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/third_party/dubins.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/config.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/environment.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/graph.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/prm.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/learning_guidance.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/utils.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/sampler.h
+[50.973s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/cubic_spline.h
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/learning_types.h
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/include/guidance_planner/guidance_planner/graph_search.h
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/launch
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/launch/ros2_example.launch
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/launch/ros1_example.launch
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/launch/guidance_server.launch
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/config
+[50.974s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/config/ros2_params.yaml
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/config/params.yaml
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/rviz
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/rviz/ros1_clean.rviz
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/rviz/ros1_example.rviz
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/rviz/ros2_example.rviz
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/environment/library_path.sh
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/environment/library_path.dsv
+[50.975s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/ament_index/resource_index/package_run_dependencies/guidance_planner
+[50.976s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/ament_index/resource_index/parent_prefix_path/guidance_planner
+[50.976s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/environment/ament_prefix_path.sh
+[50.976s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/environment/ament_prefix_path.dsv
+[50.976s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/environment/path.sh
+[50.976s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/environment/path.dsv
+[50.977s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/local_setup.bash
+[50.977s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/local_setup.sh
+[50.977s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/local_setup.zsh
+[50.977s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/local_setup.dsv
+[50.977s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.dsv
+[50.977s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/ament_index/resource_index/packages/guidance_planner
+[50.977s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/cmake/export_guidance_plannerExport.cmake
+[50.978s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/cmake/export_guidance_plannerExport-relwithdebinfo.cmake
+[50.978s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/cmake/ament_cmake_export_targets-extras.cmake
+[50.978s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/cmake/ament_cmake_export_dependencies-extras.cmake
+[50.978s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/cmake/guidance_plannerConfig.cmake
+[50.978s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/cmake/guidance_plannerConfig-version.cmake
+[50.978s] -- Installing: /workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.xml
+[50.981s] Invoked command in '/workspace/build/guidance_planner' returned '0': AMENT_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /workspace/build/guidance_planner

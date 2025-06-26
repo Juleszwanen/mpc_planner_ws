@@ -44,9 +44,8 @@ fi
 # configure and build with colcon
 # (you can pass extra --cmake-args as needed)
 export BUILD_TYPE=RelWithDebInfo
-source /opt/ros/humble/setup.bash
+
 colcon build \
-  --packages-select mpc_planner_$1 \
   --install-base install/$BUILD_TYPE \
   --cmake-args \
     -DCMAKE_BUILD_TYPE=$BUILD_TYPE \

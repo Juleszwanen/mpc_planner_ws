@@ -1,0 +1,6 @@
+source;share/acados/hook/cmake_prefix_path.ps1
+source;share/acados/hook/cmake_prefix_path.dsv
+source;share/acados/hook/cmake_prefix_path.sh
+source;share/acados/hook/ld_library_path_lib.ps1
+source;share/acados/hook/ld_library_path_lib.dsv
+source;share/acados/hook/ld_library_path_lib.sh

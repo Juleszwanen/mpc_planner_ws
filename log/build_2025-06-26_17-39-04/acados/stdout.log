@@ -1,0 +1,559 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Build type is RelWithDebInfo
+-- ACADOS_WITH_OPENMP: OFF
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Using linear algebra: HIGH_PERFORMANCE
+-- Using matrix format: PANELMAJ
+-- Using external BLAS: 0
+-- Testing target X64_INTEL_HASWELL: assembly compilation [success]
+-- Testing target X64_INTEL_HASWELL: assembly run [success]
+-- Testing target X64_INTEL_HASWELL: intrinsic compilation [success]
+-- Testing target X64_INTEL_HASWELL: intrinsic run [success]
+-- Detected target X64_INTEL_HASWELL
+-- HPIPM Target is GENERIC
+-- Using BLASFEO path: 
+-- Installation directory: /workspace/install/RelWithDebInfo/acados
+--  
+-- Target: BLASFEO is X64_AUTOMATIC, HPIPM is GENERIC
+-- Linear algebra: HIGH_PERFORMANCE
+-- Octave MEX (OFF)
+-- System name:version Linux:6.11.0-26-generic
+-- Build type is RelWithDebInfo
+-- Installation directory is /workspace/install/RelWithDebInfo/acados
+-- OpenMP parallelization is OFF
+--  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/build/acados
+[35m[1mScanning dependencies of target blasfeo[0m
+[  0%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/blasfeo_processor_features.c.o[0m
+[  0%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/blasfeo_stdlib.c.o[0m
+[  1%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/memory.c.o[0m
+[  1%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/d_aux_common.c.o[0m
+[  2%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_d_aux_lib.S.o[0m
+[  2%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_common.c.o[0m
+[  3%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.o[0m
+[  3%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgemm_diag_lib4.c.o[0m
+[  3%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgeqrf_4_lib4.c.o[0m
+[  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgetr_lib.S.o[0m
+[  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgead_lib8.S.o[0m
+[  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dpack_lib4.S.o[0m
+[  5%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgecpsc_lib8.S.o[0m
+[  5%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemm_diag_lib8.c.o[0m
+[  5%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_4_lib8.S.o[0m
+[  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_8_lib8.S.o[0m
+[  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgetr_lib8.S.o[0m
+[  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgebp_lib4.S.o[0m
+[  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgelqf_4_lib4.S.o[0m
+[  7%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_12x4_lib4.S.o[0m
+[  8%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_spack_lib8.S.o[0m
+[  8%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_4x4_lib4.S.o[0m
+[  9%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x4_lib4.S.o[0m
+[  9%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_4_lib4.S.o[0m
+[  9%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x8_lib4.S.o[0m
+[ 10%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_8_lib4.S.o[0m
+[ 10%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dger_lib4.S.o[0m
+[ 11%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetr_lib4.c.o[0m
+[ 11%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.o[0m
+[ 11%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dsymv_6_lib4.S.o[0m
+[ 12%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_16x4_lib8.S.o[0m
+[ 12%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_24x4_lib8.S.o[0m
+[ 12%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x4_lib8.S.o[0m
+[ 13%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x8_lib8.S.o[0m
+[ 13%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_daxpy_lib.c.o[0m
+[ 14%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_ddot_lib.c.o[0m
+[ 14%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dger_lib4.c.o[0m
+[ 15%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_buffer_lib4.c.o[0m
+[ 15%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dsymv_4_lib4.c.o[0m
+[ 15%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemv_4_lib4.c.o[0m
+[ 16%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_saxpy_lib.c.o[0m
+[ 16%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_sdot_lib.c.o[0m
+[ 16%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_4x4_lib4.c.o[0m
+[ 17%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_8x4_lib8.c.o[0m
+[ 17%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_spack_lib4.c.o[0m
+[ 18%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/sse3/kernel_align_x64.S.o[0m
+[ 18%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/d_aux_lib4.c.o[0m
+[ 19%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib8.c.o[0m
+[ 19%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.o[0m
+[ 19%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas1_lib4.c.o[0m
+[ 20%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_diag_lib.c.o[0m
+[ 20%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_lib4.c.o[0m
+[ 20%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas3_diag_lib4.c.o[0m
+[ 21%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas3_lib4.c.o[0m
+[ 21%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_lapack_lib4.c.o[0m
+[ 21%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib8.c.o[0m
+[ 22%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_diag_lib.c.o[0m
+[ 22%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib8.c.o[0m
+[ 23%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib8.c.o[0m
+[ 23%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib8.c.o[0m
+[ 23%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib8.c.o[0m
+[ 24%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/d_aux_ref.c.o[0m
+[ 24%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_ref.c.o[0m
+[ 25%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas1_ref.c.o[0m
+[ 25%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_diag_ref.c.o[0m
+[ 25%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_ref.c.o[0m
+[ 26%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_diag_ref.c.o[0m
+[ 26%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_ref.c.o[0m
+[ 27%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_lapack_ref.c.o[0m
+[ 27%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas1_ref.c.o[0m
+[ 27%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_diag_ref.c.o[0m
+[ 28%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_ref.c.o[0m
+[ 28%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas3_diag_ref.c.o[0m
+[ 29%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas3_ref.c.o[0m
+[ 29%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_lapack_ref.c.o[0m
+[ 29%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/d_aux_ext_dep.c.o[0m
+[ 30%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/d_aux_ext_dep_common.c.o[0m
+[ 30%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/i_aux_ext_dep_lib.c.o[0m
+[ 30%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_ext_dep.c.o[0m
+[ 31%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_ext_dep_common.c.o[0m
+[ 31%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/timing.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/v_aux_ext_dep_lib.c.o[0m
+[ 32%] [32m[1mLinking C shared library libblasfeo.so[0m
+/usr/bin/cc -fPIC  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -shared -Wl,-soname,libblasfeo.so -o libblasfeo.so CMakeFiles/blasfeo.dir/auxiliary/blasfeo_processor_features.c.o CMakeFiles/blasfeo.dir/auxiliary/blasfeo_stdlib.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_common.c.o CMakeFiles/blasfeo.dir/auxiliary/memory.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_common.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_d_aux_lib.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgemm_diag_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgeqrf_4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgetr_lib.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dpack_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgead_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgecpsc_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemm_diag_lib8.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_8_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgetr_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_spack_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgebp_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgelqf_4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_12x4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_4x4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x8_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_8_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dger_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetr_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dsymv_6_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_16x4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_24x4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x8_lib8.S.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_daxpy_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_ddot_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemv_4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dger_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_buffer_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dsymv_4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_saxpy_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_sdot_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_4x4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_8x4_lib8.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_spack_lib4.c.o CMakeFiles/blasfeo.dir/kernel/sse3/kernel_align_x64.S.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_lib4.c.o CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas1_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_diag_lib.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas3_diag_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas3_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_lapack_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_diag_lib.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib8.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_ref.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas1_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_lapack_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas1_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas3_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas3_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_lapack_ref.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_ext_dep.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_ext_dep_common.c.o CMakeFiles/blasfeo.dir/auxiliary/i_aux_ext_dep_lib.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_ext_dep.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_ext_dep_common.c.o CMakeFiles/blasfeo.dir/auxiliary/timing.c.o CMakeFiles/blasfeo.dir/auxiliary/v_aux_ext_dep_lib.c.o 
+[ 32%] Built target blasfeo
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_lq_factorization.dir/example_d_lq_factorization.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_lu_factorization.dir/example_d_lu_factorization.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/getting_started.dir/getting_started.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_lu_factorization.dir/example_s_lu_factorization.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_riccati_recursion.dir/example_d_riccati_recursion.c.o[0m
+[ 33%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cast_qcqp.c.o[0m
+[ 33%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_riccati_recursion.dir/example_s_riccati_recursion.c.o[0m
+[ 33%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_riccati_recursion.dir/tools.c.o[0m
+[ 34%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond_aux.c.o[0m
+[ 34%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond.c.o[0m
+[ 34%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond_qcqp.c.o[0m
+[ 34%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_riccati_recursion.dir/tools.c.o[0m
+[ 35%] [32m[1mLinking C executable example_s_lu_factorization[0m
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_s_lu_factorization.dir/example_s_lu_factorization.c.o -o example_s_lu_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+[ 36%] [32m[1mLinking C executable example_d_lq_factorization[0m
+[ 37%] [32m[1mLinking C executable example_d_lu_factorization[0m
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_lq_factorization.dir/example_d_lq_factorization.c.o -o example_d_lq_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_lu_factorization.dir/example_d_lu_factorization.c.o -o example_d_lu_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+[ 37%] [32m[1mLinking C executable getting_started[0m
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/getting_started.dir/getting_started.c.o -o getting_started  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+[ 37%] Built target example_d_lu_factorization
+[ 37%] Built target example_d_lq_factorization
+[ 37%] Built target example_s_lu_factorization
+[ 37%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_part_cond.c.o[0m
+[ 38%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_part_cond_qcqp.c.o[0m
+[ 38%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cast_qcqp.c.o[0m
+[ 39%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cond.c.o[0m
+[ 39%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cond_aux.c.o[0m
+[ 39%] Built target getting_started
+[ 39%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cond_qcqp.c.o[0m
+[ 40%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_part_cond.c.o[0m
+[ 40%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_part_cond_qcqp.c.o[0m
+[ 41%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp.c.o[0m
+[ 41%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_dim.c.o[0m
+[ 41%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_ipm.c.o[0m
+[ 42%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_res.c.o[0m
+[ 43%] [32m[1mLinking C executable example_d_riccati_recursion[0m
+[ 44%] [32m[1mLinking C executable example_s_riccati_recursion[0m
+[ 44%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_sol.c.o[0m
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_riccati_recursion.dir/example_d_riccati_recursion.c.o CMakeFiles/example_d_riccati_recursion.dir/tools.c.o -o example_d_riccati_recursion  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_s_riccati_recursion.dir/example_s_riccati_recursion.c.o CMakeFiles/example_s_riccati_recursion.dir/tools.c.o -o example_s_riccati_recursion  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+[ 44%] Built target example_d_riccati_recursion
+[ 44%] Built target example_s_riccati_recursion
+[ 44%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp.c.o[0m
+[ 44%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_dim.c.o[0m
+[ 45%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_utils.c.o[0m
+[ 45%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_kkt.c.o[0m
+[ 46%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_ipm.c.o[0m
+[ 46%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_res.c.o[0m
+[ 47%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_seed.c.o[0m
+[ 47%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_sol.c.o[0m
+[ 48%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_utils.c.o[0m
+[ 48%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp.c.o[0m
+[ 48%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_dim.c.o[0m
+[ 49%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_ipm.c.o[0m
+[ 49%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_res.c.o[0m
+[ 50%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_sol.c.o[0m
+[ 50%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_utils.c.o[0m
+[ 51%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_dim.c.o[0m
+[ 51%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp.c.o[0m
+[ 51%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_ipm.c.o[0m
+[ 52%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_kkt.c.o[0m
+[ 52%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_res.c.o[0m
+[ 52%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_seed.c.o[0m
+[ 53%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_sol.c.o[0m
+[ 53%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_utils.c.o[0m
+[ 54%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.o[0m
+[ 54%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o[0m
+[ 54%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.o[0m
+[ 55%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o[0m
+[ 55%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o[0m
+[ 55%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_dim.c.o[0m
+[ 56%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_ipm.c.o[0m
+[ 56%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_res.c.o[0m
+[ 57%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_sol.c.o[0m
+[ 57%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_utils.c.o[0m
+[ 57%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp.c.o[0m
+[ 58%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_dim.c.o[0m
+[ 58%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_ipm.c.o[0m
+[ 59%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_kkt.c.o[0m
+[ 59%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_red.c.o[0m
+[ 59%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_res.c.o[0m
+[ 60%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_seed.c.o[0m
+[ 60%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_sol.c.o[0m
+[ 61%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_utils.c.o[0m
+[ 61%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp.c.o[0m
+[ 61%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_dim.c.o[0m
+[ 62%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_ipm.c.o[0m
+[ 62%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_res.c.o[0m
+[ 62%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_sol.c.o[0m
+[ 63%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_utils.c.o[0m
+[ 63%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp.c.o[0m
+[ 64%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_dim.c.o[0m
+[ 64%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_ipm.c.o[0m
+[ 64%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_kkt.c.o[0m
+[ 65%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_red.c.o[0m
+[ 65%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_res.c.o[0m
+[ 66%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_seed.c.o[0m
+[ 66%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_sol.c.o[0m
+[ 66%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_utils.c.o[0m
+[ 67%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp.c.o[0m
+[ 67%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_dim.c.o[0m
+[ 68%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_ipm.c.o[0m
+[ 68%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_res.c.o[0m
+[ 68%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_sol.c.o[0m
+[ 69%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_utils.c.o[0m
+[ 69%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp.c.o[0m
+[ 70%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_dim.c.o[0m
+[ 70%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_ipm.c.o[0m
+[ 70%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_kkt.c.o[0m
+[ 71%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_res.c.o[0m
+[ 71%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_utils.c.o[0m
+[ 71%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_sol.c.o[0m
+[ 72%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp.c.o[0m
+[ 72%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_dim.c.o[0m
+[ 73%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_ipm.c.o[0m
+[ 73%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_res.c.o[0m
+[ 73%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_sol.c.o[0m
+[ 74%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_utils.c.o[0m
+[ 74%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp.c.o[0m
+[ 75%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_dim.c.o[0m
+[ 75%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_ipm.c.o[0m
+[ 75%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_kkt.c.o[0m
+[ 76%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_res.c.o[0m
+[ 76%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_sol.c.o[0m
+[ 77%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_utils.c.o[0m
+[ 77%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/scenario_tree.c.o[0m
+[ 77%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/auxiliary/aux_mem.c.o[0m
+[ 78%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/auxiliary/aux_string.c.o[0m
+[ 78%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/auxiliary/timing.c.o[0m
+[ 79%] [32m[1mLinking C shared library libhpipm.so[0m
+/usr/bin/cc -fPIC  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -O2 -fPIC -DTARGET_GENERIC  -DUSE_C99_MATH -DRUNTIME_CHECKS -O2 -g -DNDEBUG -shared -Wl,-soname,libhpipm.so -o libhpipm.so CMakeFiles/hpipm.dir/cond/d_cast_qcqp.c.o CMakeFiles/hpipm.dir/cond/d_cond.c.o CMakeFiles/hpipm.dir/cond/d_cond_aux.c.o CMakeFiles/hpipm.dir/cond/d_cond_qcqp.c.o CMakeFiles/hpipm.dir/cond/d_part_cond.c.o CMakeFiles/hpipm.dir/cond/d_part_cond_qcqp.c.o CMakeFiles/hpipm.dir/cond/s_cast_qcqp.c.o CMakeFiles/hpipm.dir/cond/s_cond.c.o CMakeFiles/hpipm.dir/cond/s_cond_aux.c.o CMakeFiles/hpipm.dir/cond/s_cond_qcqp.c.o CMakeFiles/hpipm.dir/cond/s_part_cond.c.o CMakeFiles/hpipm.dir/cond/s_part_cond_qcqp.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_res.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_utils.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_kkt.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_res.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_seed.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_utils.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_res.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_utils.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_kkt.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_res.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_seed.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_utils.c.o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_red.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_seed.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_red.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_seed.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/scenario_tree.c.o CMakeFiles/hpipm.dir/auxiliary/aux_mem.c.o CMakeFiles/hpipm.dir/auxiliary/aux_string.c.o CMakeFiles/hpipm.dir/auxiliary/timing.c.o  -Wl,-rpath,/workspace/build/acados/external/blasfeo: ../blasfeo/libblasfeo.so 
+[ 79%] Built target hpipm
+[ 79%] [32mBuilding C object acados/CMakeFiles/acados.dir/dense_qp/dense_qp_common.c.o[0m
+[ 79%] [32mBuilding C object acados/CMakeFiles/acados.dir/dense_qp/dense_qp_hpipm.c.o[0m
+[ 80%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_common.c.o[0m
+[ 80%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_bgp.c.o[0m
+[ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_common.c.o[0m
+[ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_conl.c.o[0m
+[ 82%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_common.c.o[0m
+[ 82%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_external.c.o[0m
+[ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_nls.c.o[0m
+[ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_bgh.c.o[0m
+[ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_ls.c.o[0m
+[ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_ddp.c.o[0m
+[ 84%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_dynamics_common.c.o[0m
+[ 84%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_dynamics_cont.c.o[0m
+[ 84%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_dynamics_disc.c.o[0m
+[ 85%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_globalization_common.c.o[0m
+[ 85%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_globalization_fixed_step.c.o[0m
+[ 86%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_globalization_funnel.c.o[0m
+[ 86%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_globalization_merit_backtracking.c.o[0m
+[ 86%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_qpscaling.c.o[0m
+[ 87%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_reg_common.c.o[0m
+[ 87%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_reg_convexify.c.o[0m
+[ 87%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_reg_glm.c.o[0m
+[ 88%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_reg_mirror.c.o[0m
+[ 88%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_reg_noreg.c.o[0m
+[ 89%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_reg_project.c.o[0m
+[ 89%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_reg_project_reduc_hess.c.o[0m
+[ 89%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_sqp.c.o[0m
+[ 90%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_sqp_rti.c.o[0m
+[ 90%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_sqp_with_feasible_qp.c.o[0m
+[ 91%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_qp/ocp_qp_common.c.o[0m
+[ 91%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_qp/ocp_qp_common_frontend.c.o[0m
+[ 91%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_qp/ocp_qp_full_condensing.c.o[0m
+[ 92%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_qp/ocp_qp_hpipm.c.o[0m
+[ 92%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_qp/ocp_qp_partial_condensing.c.o[0m
+[ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_qp/ocp_qp_xcond_solver.c.o[0m
+[ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_collocation_utils.c.o[0m
+[ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_common.c.o[0m
+[ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_gnsf.c.o[0m
+[ 94%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_erk_integrator.c.o[0m
+[ 95%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_irk_integrator.c.o[0m
+[ 95%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_lifted_irk_integrator.c.o[0m
+[ 95%] [32mBuilding C object acados/CMakeFiles/acados.dir/utils/external_function_generic.c.o[0m
+[ 96%] [32mBuilding C object acados/CMakeFiles/acados.dir/utils/math.c.o[0m
+[ 96%] [32mBuilding C object acados/CMakeFiles/acados.dir/utils/mem.c.o[0m
+[ 96%] [32mBuilding C object acados/CMakeFiles/acados.dir/utils/print.c.o[0m
+[ 97%] [32mBuilding C object acados/CMakeFiles/acados.dir/utils/timing.c.o[0m
+[ 97%] [32mBuilding C object acados/CMakeFiles/acados.dir/__/interfaces/acados_c/external_function_interface.c.o[0m
+[ 98%] [32mBuilding C object acados/CMakeFiles/acados.dir/__/interfaces/acados_c/dense_qp_interface.c.o[0m
+[ 98%] [32mBuilding C object acados/CMakeFiles/acados.dir/__/interfaces/acados_c/ocp_nlp_interface.c.o[0m
+[ 98%] [32mBuilding C object acados/CMakeFiles/acados.dir/__/interfaces/acados_c/ocp_qp_interface.c.o[0m
+[ 99%] [32mBuilding C object acados/CMakeFiles/acados.dir/__/interfaces/acados_c/condensing_interface.c.o[0m
+[ 99%] [32mBuilding C object acados/CMakeFiles/acados.dir/__/interfaces/acados_c/sim_interface.c.o[0m
+[100%] [32m[1mLinking C shared library libacados.so[0m
+[100%] Built target acados
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /workspace/install/RelWithDebInfo/acados/lib/libacados.so
+-- Set runtime path of "/workspace/install/RelWithDebInfo/acados/lib/libacados.so" to ""
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_ooqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_qpdunes.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_full_condensing.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_hpipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_osqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_partial_condensing.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_common_frontend.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_hpmpc.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_qp/ocp_qp_xcond_solver.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils/timing.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils/mem.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils/strsep.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils/print.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils/types.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils/math.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/utils/external_function_generic.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/sim
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/sim/sim_irk_integrator.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/sim/sim_collocation_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/sim/sim_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/sim/sim_lifted_irk_integrator.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/sim/sim_gnsf.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/sim/sim_erk_integrator.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_reg_project.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_globalization_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_sqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_globalization_funnel.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_globalization_merit_backtracking.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_constraints_bgp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_cost_nls.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_reg_noreg.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_cost_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_cost_ls.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_dynamics_cont.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_reg_convexify.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_globalization_fixed_step.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_reg_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_cost_external.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_dynamics_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_ddp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_dynamics_disc.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_reg_project_reduc_hess.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_cost_conl.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_qpscaling.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_reg_glm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_constraints_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_sqp_with_feasible_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_reg_mirror.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_constraints_bgh.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/ocp_nlp/ocp_nlp_sqp_rti.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/dense_qp
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/dense_qp/dense_qp_qore.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/dense_qp/dense_qp_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/dense_qp/dense_qp_ooqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/dense_qp/dense_qp_hpipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/dense_qp/dense_qp_qpoases.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados/dense_qp/dense_qp_daqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/acadosTargets.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/acadosTargets-relwithdebinfo.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/acadosConfig.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/FindEigen3.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/FindFortranLibs.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/FindOpenBLAS.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados_c
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados_c/ocp_nlp_interface.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados_c/sim_interface.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados_c/ocp_qp_interface.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados_c/external_function_interface.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados_c/dense_qp_interface.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/acados_c/condensing_interface.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/lib/libblasfeo.so
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/blasfeoConfig.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/blasfeoConfig-relwithdebinfo.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_align.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_block_size.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_aux.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_aux_ext_dep.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_aux_ext_dep_ref.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_aux_old.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_aux_ref.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_aux_test.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_blas.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_blas_api.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_blasfeo_api.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_blasfeo_api_ref.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_blasfeo_hp_api.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_blasfeo_ref_api.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_d_kernel.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_i_aux_ext_dep.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_m_aux.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_memory.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_naming.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_processor_features.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_aux.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_aux_ext_dep.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_aux_ext_dep_ref.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_aux_old.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_aux_ref.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_aux_test.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_blas.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_blas_api.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_blasfeo_api.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_blasfeo_api_ref.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_blasfeo_ref_api.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_s_kernel.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_stdlib.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_target.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_timing.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/blasfeo_v_aux_ext_dep.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/d_blas.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/d_blas_64.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/s_blas.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/blasfeo/include/s_blas_64.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/lib/libhpipm.so
+-- Set runtime path of "/workspace/install/RelWithDebInfo/acados/lib/libhpipm.so" to ""
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/hpipmConfig.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/cmake/hpipmConfig-relwithdebinfo.cmake
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_aux_mem.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_aux_string.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_common.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_cast_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_cond.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_cond_aux.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_cond_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_core_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_core_qp_ipm_aux.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qcqp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qcqp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qcqp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qcqp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qcqp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp_kkt.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp_seed.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_dense_qp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qcqp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qcqp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qcqp_red.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qcqp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qcqp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qcqp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_kkt.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_red.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_seed.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_solver.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_ocp_qp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_part_cond.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_part_cond_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_sim_erk.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_sim_rk.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qcqp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qcqp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qcqp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qcqp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qcqp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qp_kkt.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_d_tree_ocp_qp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_m_dense_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_m_dense_qp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_m_ocp_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_m_ocp_qp_ipm_hard.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_m_ocp_qp_kkt.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_cast_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_cond.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_cond_aux.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_cond_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_core_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_core_qp_ipm_aux.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qcqp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qcqp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qcqp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qcqp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qcqp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp_kkt.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp_seed.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_dense_qp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qcqp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qcqp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qcqp_red.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qcqp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qcqp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qcqp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_kkt.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_red.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_seed.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_ocp_qp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_part_cond.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_part_cond_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_sim_erk.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_sim_rk.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qcqp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qcqp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qcqp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qcqp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qcqp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qcqp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qp.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qp_dim.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qp_ipm.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qp_kkt.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qp_res.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qp_sol.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_s_tree_ocp_qp_utils.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_scenario_tree.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_timing.h
+-- Installing: /workspace/install/RelWithDebInfo/acados/include/hpipm/include/hpipm_tree.h
