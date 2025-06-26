@@ -91,4 +91,5 @@ cd /workspace
 # Install dependencies
 sudo apt-get update -y
 rosdep update
+
 rosdep install -y -r --from-paths src --ignore-src --rosdistro $ROS_DISTRO

@@ -1,0 +1,295 @@
+[0.103s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--install-base', 'install/RelWithDebInfo', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3']
+[0.103s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='/workspace/install/RelWithDebInfo', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x79402efa4700>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79402f09dd50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79402f09dd50>>, mixin_verb=('build',))
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.259s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore_ament_install'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['colcon_pkg']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'colcon_pkg'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['colcon_meta']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'colcon_meta'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ros']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ros'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['cmake', 'python']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'cmake'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'python'
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['python_setup_py']
+[0.270s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'python_setup_py'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install/RelWithDebInfo) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install/RelWithDebInfo) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(install/RelWithDebInfo) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extension 'colcon_pkg'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extensions ['colcon_meta']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extension 'colcon_meta'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extensions ['ros']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extension 'ros'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extensions ['cmake', 'python']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/acados) by extension 'python'
+[0.323s] DEBUG:colcon.colcon_core.package_identification:Package 'src/acados' with type 'cmake' and name 'acados'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/guidance_planner) by extension 'ros'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'src/guidance_planner' with type 'ros.ament_cmake' and name 'guidance_planner'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_tools) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_tools' with type 'ros.ament_cmake' and name 'ros_tools'
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3']'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'acados' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'acados' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/acados', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/RelWithDebInfo/acados', 'merge_install': False, 'path': '/workspace/src/acados', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3']'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'ros_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/ros_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/RelWithDebInfo/ros_tools', 'merge_install': False, 'path': '/workspace/src/ros_tools', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3']'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'guidance_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.346s] DEBUG:colcon.colcon_core.verb:Building package 'guidance_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/build/guidance_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DPYTHON_VERSION=3'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/install/RelWithDebInfo/guidance_planner', 'merge_install': False, 'path': '/workspace/src/guidance_planner', 'symlink_install': False, 'test_result_base': None}
+[0.346s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.354s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.354s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/src/ros_tools' with build type 'ament_cmake'
+[0.354s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/src/ros_tools'
+[0.356s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.357s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.357s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.358s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspace/install/RelWithDebInfo/guidance_planner' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.358s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspace/install/RelWithDebInfo/ros_tools' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.358s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/workspace/install/RelWithDebInfo/guidance_planner' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.358s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/workspace/install/RelWithDebInfo/ros_tools' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.358s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/workspace/install/RelWithDebInfo/acados' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.362s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/src/acados'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/ros_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspace/src/ros_tools -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/ros_tools
+[0.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/acados': /usr/bin/cmake /workspace/src/acados -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/acados
+[1.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/acados' returned '0': /usr/bin/cmake /workspace/src/acados -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/acados
+[1.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/acados': /usr/bin/cmake --build /workspace/build/acados -- -j12 -l12
+[4.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/ros_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspace/src/ros_tools -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/ros_tools
+[4.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/ros_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/ros_tools -- -j12 -l12
+[36.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/ros_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspace/build/ros_tools -- -j12 -l12
+[36.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/ros_tools': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspace/build/ros_tools
+[36.267s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_tools)
+[36.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/ros_tools' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspace/build/ros_tools
+[36.274s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools' for CMake module files
+[36.275s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools' for CMake config files
+[36.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_tools', 'cmake_prefix_path')
+[36.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/cmake_prefix_path.ps1'
+[36.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/cmake_prefix_path.dsv'
+[36.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/cmake_prefix_path.sh'
+[36.281s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/lib'
+[36.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_tools', 'ld_library_path_lib')
+[36.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/ld_library_path_lib.ps1'
+[36.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/ld_library_path_lib.dsv'
+[36.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/ld_library_path_lib.sh'
+[36.287s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/bin'
+[36.287s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/lib/pkgconfig/ros_tools.pc'
+[36.290s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/lib/python3.10/site-packages'
+[36.291s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/bin'
+[36.291s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.ps1'
+[36.294s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.dsv'
+[36.296s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.sh'
+[36.298s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.bash'
+[36.300s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.zsh'
+[36.302s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/RelWithDebInfo/ros_tools/share/colcon-core/packages/ros_tools)
+[36.304s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_tools)
+[36.305s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools' for CMake module files
+[36.306s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools' for CMake config files
+[36.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_tools', 'cmake_prefix_path')
+[36.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/cmake_prefix_path.ps1'
+[36.308s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/cmake_prefix_path.dsv'
+[36.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/cmake_prefix_path.sh'
+[36.310s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/lib'
+[36.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_tools', 'ld_library_path_lib')
+[36.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/ld_library_path_lib.ps1'
+[36.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/ld_library_path_lib.dsv'
+[36.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/hook/ld_library_path_lib.sh'
+[36.315s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/bin'
+[36.315s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/lib/pkgconfig/ros_tools.pc'
+[36.315s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/lib/python3.10/site-packages'
+[36.316s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/ros_tools/bin'
+[36.317s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.ps1'
+[36.318s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.dsv'
+[36.320s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.sh'
+[36.321s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.bash'
+[36.322s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/ros_tools/share/ros_tools/package.zsh'
+[36.324s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/RelWithDebInfo/ros_tools/share/colcon-core/packages/ros_tools)
+[36.325s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/src/guidance_planner' with build type 'ament_cmake'
+[36.325s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/src/guidance_planner'
+[36.326s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[36.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[36.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/guidance_planner': CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/workspace/install/RelWithDebInfo/guidance_planner:/workspace/install/RelWithDebInfo/acados:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:/workspace/install/RelWithDebInfo/guidance_planner/lib:/workspace/install/RelWithDebInfo/acados/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/acados/lib:/workspace/acados/lib /usr/bin/cmake /workspace/src/guidance_planner -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/guidance_planner
+[39.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/acados' returned '0': /usr/bin/cmake --build /workspace/build/acados -- -j12 -l12
+[39.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/acados': /usr/bin/cmake --install /workspace/build/acados
+[39.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(acados)
+[39.231s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/acados' for CMake module files
+[39.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/acados' returned '0': /usr/bin/cmake --install /workspace/build/acados
+[39.232s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/acados' for CMake config files
+[39.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('acados', 'cmake_prefix_path')
+[39.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/acados/share/acados/hook/cmake_prefix_path.ps1'
+[39.234s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/acados/share/acados/hook/cmake_prefix_path.dsv'
+[39.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/acados/share/acados/hook/cmake_prefix_path.sh'
+[39.236s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/acados/lib'
+[39.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('acados', 'ld_library_path_lib')
+[39.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/acados/share/acados/hook/ld_library_path_lib.ps1'
+[39.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/acados/share/acados/hook/ld_library_path_lib.dsv'
+[39.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/acados/share/acados/hook/ld_library_path_lib.sh'
+[39.239s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/acados/bin'
+[39.239s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/acados/lib/pkgconfig/acados.pc'
+[39.240s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/acados/lib/python3.10/site-packages'
+[39.240s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/acados/bin'
+[39.240s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/acados/share/acados/package.ps1'
+[39.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/RelWithDebInfo/acados/share/acados/package.dsv'
+[39.242s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/acados/share/acados/package.sh'
+[39.242s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/acados/share/acados/package.bash'
+[39.243s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/acados/share/acados/package.zsh'
+[39.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/RelWithDebInfo/acados/share/colcon-core/packages/acados)
+[40.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/guidance_planner' returned '0': CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/workspace/install/RelWithDebInfo/guidance_planner:/workspace/install/RelWithDebInfo/acados:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:/workspace/install/RelWithDebInfo/guidance_planner/lib:/workspace/install/RelWithDebInfo/acados/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/acados/lib:/workspace/acados/lib /usr/bin/cmake /workspace/src/guidance_planner -DCMAKE_BUILD_TYPE=RelWithDebInfo -DPYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=/workspace/install/RelWithDebInfo/guidance_planner
+[40.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/guidance_planner': CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/workspace/install/RelWithDebInfo/guidance_planner:/workspace/install/RelWithDebInfo/acados:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:/workspace/install/RelWithDebInfo/guidance_planner/lib:/workspace/install/RelWithDebInfo/acados/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/acados/lib:/workspace/acados/lib /usr/bin/cmake --build /workspace/build/guidance_planner -- -j12 -l12
+[89.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/guidance_planner' returned '0': CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/workspace/install/RelWithDebInfo/guidance_planner:/workspace/install/RelWithDebInfo/acados:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:/workspace/install/RelWithDebInfo/guidance_planner/lib:/workspace/install/RelWithDebInfo/acados/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/acados/lib:/workspace/acados/lib /usr/bin/cmake --build /workspace/build/guidance_planner -- -j12 -l12
+[89.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/build/guidance_planner': CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/workspace/install/RelWithDebInfo/guidance_planner:/workspace/install/RelWithDebInfo/acados:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:/workspace/install/RelWithDebInfo/guidance_planner/lib:/workspace/install/RelWithDebInfo/acados/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/acados/lib:/workspace/acados/lib /usr/bin/cmake --install /workspace/build/guidance_planner
+[89.113s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(guidance_planner)
+[89.113s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner' for CMake module files
+[89.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/build/guidance_planner' returned '0': CMAKE_PREFIX_PATH=/workspace/install/RelWithDebInfo/ros_tools:/workspace/install/RelWithDebInfo/guidance_planner:/workspace/install/RelWithDebInfo/acados:/opt/ros/humble LD_LIBRARY_PATH=/workspace/install/RelWithDebInfo/ros_tools/lib:/workspace/install/RelWithDebInfo/guidance_planner/lib:/workspace/install/RelWithDebInfo/acados/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/acados/lib:/workspace/acados/lib /usr/bin/cmake --install /workspace/build/guidance_planner
+[89.114s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner' for CMake config files
+[89.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('guidance_planner', 'cmake_prefix_path')
+[89.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/cmake_prefix_path.ps1'
+[89.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/cmake_prefix_path.dsv'
+[89.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/cmake_prefix_path.sh'
+[89.116s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/lib'
+[89.116s] Level 1:colcon.colcon_core.shell:create_environment_hook('guidance_planner', 'ld_library_path_lib')
+[89.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/ld_library_path_lib.ps1'
+[89.116s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/ld_library_path_lib.dsv'
+[89.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/ld_library_path_lib.sh'
+[89.117s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/bin'
+[89.117s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/lib/pkgconfig/guidance_planner.pc'
+[89.117s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/lib/python3.10/site-packages'
+[89.118s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/bin'
+[89.118s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.ps1'
+[89.118s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.dsv'
+[89.119s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.sh'
+[89.119s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.bash'
+[89.119s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.zsh'
+[89.120s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/RelWithDebInfo/guidance_planner/share/colcon-core/packages/guidance_planner)
+[89.120s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(guidance_planner)
+[89.120s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner' for CMake module files
+[89.121s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner' for CMake config files
+[89.121s] Level 1:colcon.colcon_core.shell:create_environment_hook('guidance_planner', 'cmake_prefix_path')
+[89.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/cmake_prefix_path.ps1'
+[89.122s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/cmake_prefix_path.dsv'
+[89.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/cmake_prefix_path.sh'
+[89.123s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/lib'
+[89.123s] Level 1:colcon.colcon_core.shell:create_environment_hook('guidance_planner', 'ld_library_path_lib')
+[89.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/ld_library_path_lib.ps1'
+[89.123s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/ld_library_path_lib.dsv'
+[89.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/hook/ld_library_path_lib.sh'
+[89.124s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/bin'
+[89.124s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/lib/pkgconfig/guidance_planner.pc'
+[89.124s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/lib/python3.10/site-packages'
+[89.124s] Level 1:colcon.colcon_core.environment:checking '/workspace/install/RelWithDebInfo/guidance_planner/bin'
+[89.125s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.ps1'
+[89.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.dsv'
+[89.126s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.sh'
+[89.126s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.bash'
+[89.126s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/install/RelWithDebInfo/guidance_planner/share/guidance_planner/package.zsh'
+[89.127s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/install/RelWithDebInfo/guidance_planner/share/colcon-core/packages/guidance_planner)
+[89.127s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[89.127s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[89.127s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[89.127s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[89.136s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[89.136s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[89.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[89.137s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[89.142s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[89.142s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[89.143s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/RelWithDebInfo/local_setup.ps1'
+[89.146s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/install/RelWithDebInfo/_local_setup_util_ps1.py'
+[89.149s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/RelWithDebInfo/setup.ps1'
+[89.151s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/RelWithDebInfo/local_setup.sh'
+[89.153s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/install/RelWithDebInfo/_local_setup_util_sh.py'
+[89.154s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/RelWithDebInfo/setup.sh'
+[89.156s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/RelWithDebInfo/local_setup.bash'
+[89.157s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/RelWithDebInfo/setup.bash'
+[89.159s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/install/RelWithDebInfo/local_setup.zsh'
+[89.160s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/install/RelWithDebInfo/setup.zsh'

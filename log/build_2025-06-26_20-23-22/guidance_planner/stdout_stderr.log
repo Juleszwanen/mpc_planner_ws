@@ -49,18 +49,18 @@
 [ 15%] [32mBuilding CXX object CMakeFiles/guidance_planner_homotopy.dir/src/homotopy_comparison/winding_angle.cpp.o[0m
 [ 20%] [32m[1mLinking CXX shared library libguidance_planner_homotopy.so[0m
 [ 20%] Built target guidance_planner_homotopy
-[ 30%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/global_guidance.cpp.o[0m
-[ 30%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/graph.cpp.o[0m
-[ 35%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/config.cpp.o[0m
-[ 40%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/types.cpp.o[0m
-[ 45%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/prm.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/connection.cpp.o[0m
-[ 60%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/paths.cpp.o[0m
-[ 55%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/graph_search.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/global_guidance.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/prm.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/sampler.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/config.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/paths.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/graph.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/types.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/graph_search.cpp.o[0m
 [ 65%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/node.cpp.o[0m
-[ 70%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/sampler.cpp.o[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/cubic_spline.cpp.o[0m
-[ 80%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/environment.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/types/connection.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/environment.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/cubic_spline.cpp.o[0m
 [ 85%] [32mBuilding CXX object CMakeFiles/guidance_planner.dir/src/third_party/dubins.cpp.o[0m
 [ 90%] [32m[1mLinking CXX shared library libguidance_planner.so[0m
 [ 90%] Built target guidance_planner

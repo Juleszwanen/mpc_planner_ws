@@ -12,6 +12,14 @@
 -- Detecting CXX compile features - done
 -- Build type is RelWithDebInfo
 -- ACADOS_WITH_OPENMP: OFF
+[0mCMake Deprecation Warning at external/blasfeo/CMakeLists.txt:36 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
 -- The ASM compiler identification is GNU
 -- Found assembler: /usr/bin/cc
 -- Using linear algebra: HIGH_PERFORMANCE
@@ -22,6 +30,14 @@
 -- Testing target X64_INTEL_HASWELL: intrinsic compilation [success]
 -- Testing target X64_INTEL_HASWELL: intrinsic run [success]
 -- Detected target X64_INTEL_HASWELL
+[0mCMake Deprecation Warning at external/hpipm/CMakeLists.txt:36 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
 -- HPIPM Target is GENERIC
 -- Using BLASFEO path: 
 -- Installation directory: /workspace/install/RelWithDebInfo/acados
@@ -36,48 +52,54 @@
 --  
 -- Configuring done
 -- Generating done
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PYTHON_VERSION
+
+[0m
 -- Build files have been written to: /workspace/build/acados
 [35m[1mScanning dependencies of target blasfeo[0m
 [  0%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/blasfeo_processor_features.c.o[0m
 [  0%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/blasfeo_stdlib.c.o[0m
-[  1%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/memory.c.o[0m
 [  1%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/d_aux_common.c.o[0m
-[  2%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_d_aux_lib.S.o[0m
-[  2%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_common.c.o[0m
-[  3%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.o[0m
+[  1%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/memory.c.o[0m
+[  1%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.o[0m
+[  2%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgetr_lib.S.o[0m
 [  3%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgemm_diag_lib4.c.o[0m
 [  3%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgeqrf_4_lib4.c.o[0m
-[  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgetr_lib.S.o[0m
-[  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgead_lib8.S.o[0m
+[  4%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_common.c.o[0m
 [  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_dpack_lib4.S.o[0m
+[  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgead_lib8.S.o[0m
+[  4%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_d_aux_lib.S.o[0m
 [  5%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgecpsc_lib8.S.o[0m
 [  5%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemm_diag_lib8.c.o[0m
 [  5%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_4_lib8.S.o[0m
 [  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_8_lib8.S.o[0m
 [  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgetr_lib8.S.o[0m
-[  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgebp_lib4.S.o[0m
-[  6%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgelqf_4_lib4.S.o[0m
-[  7%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_12x4_lib4.S.o[0m
-[  8%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_spack_lib8.S.o[0m
+[  7%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx/kernel_spack_lib8.S.o[0m
+[  7%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgebp_lib4.S.o[0m
+[  7%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgelqf_4_lib4.S.o[0m
+[  8%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_12x4_lib4.S.o[0m
 [  8%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_4x4_lib4.S.o[0m
 [  9%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x4_lib4.S.o[0m
-[  9%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_4_lib4.S.o[0m
 [  9%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x8_lib4.S.o[0m
 [ 10%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_8_lib4.S.o[0m
+[ 10%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_4_lib4.S.o[0m
 [ 10%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dger_lib4.S.o[0m
+[ 10%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.o[0m
 [ 11%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetr_lib4.c.o[0m
-[ 11%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.o[0m
 [ 11%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dsymv_6_lib4.S.o[0m
+[ 11%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x4_lib8.S.o[0m
 [ 12%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_16x4_lib8.S.o[0m
 [ 12%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_24x4_lib8.S.o[0m
-[ 12%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x4_lib8.S.o[0m
+[ 12%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_daxpy_lib.c.o[0m
 [ 13%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x8_lib8.S.o[0m
-[ 13%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_daxpy_lib.c.o[0m
 [ 14%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_ddot_lib.c.o[0m
 [ 14%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dger_lib4.c.o[0m
+[ 14%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemv_4_lib4.c.o[0m
 [ 15%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_buffer_lib4.c.o[0m
 [ 15%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dsymv_4_lib4.c.o[0m
-[ 15%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemv_4_lib4.c.o[0m
 [ 16%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_saxpy_lib.c.o[0m
 [ 16%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_sdot_lib.c.o[0m
 [ 16%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_4x4_lib4.c.o[0m
@@ -85,8 +107,8 @@
 [ 17%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/generic/kernel_spack_lib4.c.o[0m
 [ 18%] [32mBuilding ASM object external/blasfeo/CMakeFiles/blasfeo.dir/kernel/sse3/kernel_align_x64.S.o[0m
 [ 18%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/d_aux_lib4.c.o[0m
+[ 18%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.o[0m
 [ 19%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib8.c.o[0m
-[ 19%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.o[0m
 [ 19%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas1_lib4.c.o[0m
 [ 20%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_diag_lib.c.o[0m
 [ 20%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_lib4.c.o[0m
@@ -105,8 +127,8 @@
 [ 25%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_diag_ref.c.o[0m
 [ 25%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_ref.c.o[0m
 [ 26%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_diag_ref.c.o[0m
-[ 26%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_ref.c.o[0m
 [ 27%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_lapack_ref.c.o[0m
+[ 27%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_ref.c.o[0m
 [ 27%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas1_ref.c.o[0m
 [ 27%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_diag_ref.c.o[0m
 [ 28%] [32mBuilding C object external/blasfeo/CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_ref.c.o[0m
@@ -123,35 +145,35 @@
 [ 32%] [32m[1mLinking C shared library libblasfeo.so[0m
 /usr/bin/cc -fPIC  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -shared -Wl,-soname,libblasfeo.so -o libblasfeo.so CMakeFiles/blasfeo.dir/auxiliary/blasfeo_processor_features.c.o CMakeFiles/blasfeo.dir/auxiliary/blasfeo_stdlib.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_common.c.o CMakeFiles/blasfeo.dir/auxiliary/memory.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_common.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_d_aux_lib.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgecp_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgemm_diag_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgeqrf_4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dgetr_lib.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_dpack_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgead_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgecpsc_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemm_diag_lib8.c.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgemv_8_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_sgetr_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx/kernel_spack_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgebp_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgelqf_4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_12x4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_4x4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemm_8x8_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_4_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgemv_8_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dger_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetr_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dgetrf_pivot_lib4.c.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_dsymv_6_lib4.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_16x4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_24x4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x4_lib8.S.o CMakeFiles/blasfeo.dir/kernel/avx2/kernel_sgemm_8x8_lib8.S.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_daxpy_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_ddot_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dgemv_4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dger_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dpack_buffer_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_dsymv_4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_saxpy_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_sdot_lib.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_4x4_lib4.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_sgemm_8x4_lib8.c.o CMakeFiles/blasfeo.dir/kernel/generic/kernel_spack_lib4.c.o CMakeFiles/blasfeo.dir/kernel/sse3/kernel_align_x64.S.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_lib4.c.o CMakeFiles/blasfeo.dir/auxiliary/m_aux_lib48.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas1_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_diag_lib.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas2_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas3_diag_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_blas3_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/d_lapack_lib4.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas1_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_diag_lib.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas2_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_diag_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_blas3_lib8.c.o CMakeFiles/blasfeo.dir/blasfeo_hp_pm/s_lapack_lib8.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_ref.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas1_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas2_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_blas3_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/d_lapack_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas1_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas2_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas3_diag_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_blas3_ref.c.o CMakeFiles/blasfeo.dir/blasfeo_ref/s_lapack_ref.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_ext_dep.c.o CMakeFiles/blasfeo.dir/auxiliary/d_aux_ext_dep_common.c.o CMakeFiles/blasfeo.dir/auxiliary/i_aux_ext_dep_lib.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_ext_dep.c.o CMakeFiles/blasfeo.dir/auxiliary/s_aux_ext_dep_common.c.o CMakeFiles/blasfeo.dir/auxiliary/timing.c.o CMakeFiles/blasfeo.dir/auxiliary/v_aux_ext_dep_lib.c.o 
 [ 32%] Built target blasfeo
-[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_lq_factorization.dir/example_d_lq_factorization.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_riccati_recursion.dir/example_d_riccati_recursion.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_lu_factorization.dir/example_s_lu_factorization.c.o[0m
 [ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_lu_factorization.dir/example_d_lu_factorization.c.o[0m
 [ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/getting_started.dir/getting_started.c.o[0m
-[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_lu_factorization.dir/example_s_lu_factorization.c.o[0m
-[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_riccati_recursion.dir/example_d_riccati_recursion.c.o[0m
-[ 33%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cast_qcqp.c.o[0m
-[ 33%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_riccati_recursion.dir/example_s_riccati_recursion.c.o[0m
-[ 33%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_riccati_recursion.dir/tools.c.o[0m
-[ 34%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond_aux.c.o[0m
-[ 34%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond.c.o[0m
-[ 34%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond_qcqp.c.o[0m
-[ 34%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_riccati_recursion.dir/tools.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_riccati_recursion.dir/example_s_riccati_recursion.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_riccati_recursion.dir/tools.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_s_riccati_recursion.dir/tools.c.o[0m
+[ 32%] [32mBuilding C object external/blasfeo/examples/CMakeFiles/example_d_lq_factorization.dir/example_d_lq_factorization.c.o[0m
+[ 33%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond_aux.c.o[0m
+[ 33%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond_qcqp.c.o[0m
+[ 33%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cond.c.o[0m
+[ 34%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_cast_qcqp.c.o[0m
 [ 35%] [32m[1mLinking C executable example_s_lu_factorization[0m
-/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_s_lu_factorization.dir/example_s_lu_factorization.c.o -o example_s_lu_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
 [ 36%] [32m[1mLinking C executable example_d_lq_factorization[0m
-[ 37%] [32m[1mLinking C executable example_d_lu_factorization[0m
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_s_lu_factorization.dir/example_s_lu_factorization.c.o -o example_s_lu_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
 /usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_lq_factorization.dir/example_d_lq_factorization.c.o -o example_d_lq_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
-/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_lu_factorization.dir/example_d_lu_factorization.c.o -o example_d_lu_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+[ 37%] [32m[1mLinking C executable example_d_lu_factorization[0m
 [ 37%] [32m[1mLinking C executable getting_started[0m
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_lu_factorization.dir/example_d_lu_factorization.c.o -o example_d_lu_factorization  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
 /usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/getting_started.dir/getting_started.c.o -o getting_started  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
-[ 37%] Built target example_d_lu_factorization
-[ 37%] Built target example_d_lq_factorization
-[ 37%] Built target example_s_lu_factorization
 [ 37%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_part_cond.c.o[0m
+[ 37%] Built target example_s_lu_factorization
+[ 37%] Built target example_d_lq_factorization
 [ 38%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/d_part_cond_qcqp.c.o[0m
 [ 38%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cast_qcqp.c.o[0m
 [ 39%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cond.c.o[0m
-[ 39%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cond_aux.c.o[0m
+[ 39%] Built target example_d_lu_factorization
 [ 39%] Built target getting_started
+[ 39%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cond_aux.c.o[0m
 [ 39%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_cond_qcqp.c.o[0m
 [ 40%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_part_cond.c.o[0m
 [ 40%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/cond/s_part_cond_qcqp.c.o[0m
@@ -159,18 +181,18 @@
 [ 41%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_dim.c.o[0m
 [ 41%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_ipm.c.o[0m
 [ 42%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_res.c.o[0m
-[ 43%] [32m[1mLinking C executable example_d_riccati_recursion[0m
-[ 44%] [32m[1mLinking C executable example_s_riccati_recursion[0m
-[ 44%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_sol.c.o[0m
-/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_riccati_recursion.dir/example_d_riccati_recursion.c.o CMakeFiles/example_d_riccati_recursion.dir/tools.c.o -o example_d_riccati_recursion  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+[ 43%] [32m[1mLinking C executable example_s_riccati_recursion[0m
 /usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_s_riccati_recursion.dir/example_s_riccati_recursion.c.o CMakeFiles/example_s_riccati_recursion.dir/tools.c.o -o example_s_riccati_recursion  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
-[ 44%] Built target example_d_riccati_recursion
-[ 44%] Built target example_s_riccati_recursion
-[ 44%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp.c.o[0m
-[ 44%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_dim.c.o[0m
-[ 45%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_utils.c.o[0m
-[ 45%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_kkt.c.o[0m
+[ 43%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_sol.c.o[0m
+[ 44%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_utils.c.o[0m
+[ 45%] [32m[1mLinking C executable example_d_riccati_recursion[0m
+/usr/bin/cc  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -DLA_HIGH_PERFORMANCE -DBLASFEO_REF_API -DMF_PANELMAJ -DK_MAX_STACK=300 -DUSE_C99_MATH -DEXT_DEP -DEXT_DEP_MALLOC -DOS_LINUX -DEXTERNAL_BLAS_NONE -O2 -fPIC -DTARGET_X64_INTEL_HASWELL -DTARGET_PHANTOM -m64 -mavx -mavx2 -mfma -O2 -g -DNDEBUG -rdynamic CMakeFiles/example_d_riccati_recursion.dir/example_d_riccati_recursion.c.o CMakeFiles/example_d_riccati_recursion.dir/tools.c.o -o example_d_riccati_recursion  -Wl,-rpath,/workspace/build/acados/external/blasfeo ../libblasfeo.so -lm 
+[ 45%] Built target example_s_riccati_recursion
+[ 45%] Built target example_d_riccati_recursion
+[ 45%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp.c.o[0m
+[ 45%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_dim.c.o[0m
 [ 46%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_ipm.c.o[0m
+[ 46%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_kkt.c.o[0m
 [ 46%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_res.c.o[0m
 [ 47%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_seed.c.o[0m
 [ 47%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_sol.c.o[0m
@@ -181,12 +203,12 @@
 [ 49%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_res.c.o[0m
 [ 50%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_sol.c.o[0m
 [ 50%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_utils.c.o[0m
+[ 50%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp.c.o[0m
 [ 51%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_dim.c.o[0m
-[ 51%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp.c.o[0m
 [ 51%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_ipm.c.o[0m
 [ 52%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_kkt.c.o[0m
-[ 52%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_res.c.o[0m
 [ 52%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_seed.c.o[0m
+[ 52%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_res.c.o[0m
 [ 53%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_sol.c.o[0m
 [ 53%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_utils.c.o[0m
 [ 54%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.o[0m
@@ -195,8 +217,8 @@
 [ 55%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o[0m
 [ 55%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o[0m
 [ 55%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_dim.c.o[0m
+[ 55%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_res.c.o[0m
 [ 56%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_ipm.c.o[0m
-[ 56%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_res.c.o[0m
 [ 57%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_sol.c.o[0m
 [ 57%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_utils.c.o[0m
 [ 57%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp.c.o[0m
@@ -215,8 +237,8 @@
 [ 62%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_sol.c.o[0m
 [ 63%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_utils.c.o[0m
 [ 63%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp.c.o[0m
+[ 63%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_ipm.c.o[0m
 [ 64%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_dim.c.o[0m
-[ 64%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_ipm.c.o[0m
 [ 64%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_kkt.c.o[0m
 [ 65%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_red.c.o[0m
 [ 65%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_res.c.o[0m
@@ -234,8 +256,8 @@
 [ 70%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_ipm.c.o[0m
 [ 70%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_kkt.c.o[0m
 [ 71%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_res.c.o[0m
-[ 71%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_utils.c.o[0m
 [ 71%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_sol.c.o[0m
+[ 71%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_utils.c.o[0m
 [ 72%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp.c.o[0m
 [ 72%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_dim.c.o[0m
 [ 73%] [32mBuilding C object external/hpipm/CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_ipm.c.o[0m
@@ -256,18 +278,18 @@
 [ 79%] [32m[1mLinking C shared library libhpipm.so[0m
 /usr/bin/cc -fPIC  -std=c99 -Wall -fdiagnostics-show-option -Wno-error -w -O2 -fPIC -DTARGET_GENERIC  -DUSE_C99_MATH -DRUNTIME_CHECKS -O2 -g -DNDEBUG -shared -Wl,-soname,libhpipm.so -o libhpipm.so CMakeFiles/hpipm.dir/cond/d_cast_qcqp.c.o CMakeFiles/hpipm.dir/cond/d_cond.c.o CMakeFiles/hpipm.dir/cond/d_cond_aux.c.o CMakeFiles/hpipm.dir/cond/d_cond_qcqp.c.o CMakeFiles/hpipm.dir/cond/d_part_cond.c.o CMakeFiles/hpipm.dir/cond/d_part_cond_qcqp.c.o CMakeFiles/hpipm.dir/cond/s_cast_qcqp.c.o CMakeFiles/hpipm.dir/cond/s_cond.c.o CMakeFiles/hpipm.dir/cond/s_cond_aux.c.o CMakeFiles/hpipm.dir/cond/s_cond_qcqp.c.o CMakeFiles/hpipm.dir/cond/s_part_cond.c.o CMakeFiles/hpipm.dir/cond/s_part_cond_qcqp.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_res.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qcqp_utils.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_kkt.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_res.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_seed.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/d_dense_qp_utils.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_res.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qcqp_utils.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_dim.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_ipm.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_kkt.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_res.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_seed.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_sol.c.o CMakeFiles/hpipm.dir/dense_qp/s_dense_qp_utils.c.o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm.c.o CMakeFiles/hpipm.dir/ipm_core/d_core_qp_ipm_aux.c.o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm.c.o CMakeFiles/hpipm.dir/ipm_core/s_core_qp_ipm_aux.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_red.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_seed.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/d_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_red.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_res.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_seed.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/ocp_qp/s_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/d_tree_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qcqp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_dim.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_ipm.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_kkt.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_res.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_sol.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/s_tree_ocp_qp_utils.c.o CMakeFiles/hpipm.dir/tree_ocp_qp/scenario_tree.c.o CMakeFiles/hpipm.dir/auxiliary/aux_mem.c.o CMakeFiles/hpipm.dir/auxiliary/aux_string.c.o CMakeFiles/hpipm.dir/auxiliary/timing.c.o  -Wl,-rpath,/workspace/build/acados/external/blasfeo: ../blasfeo/libblasfeo.so 
 [ 79%] Built target hpipm
-[ 79%] [32mBuilding C object acados/CMakeFiles/acados.dir/dense_qp/dense_qp_common.c.o[0m
 [ 79%] [32mBuilding C object acados/CMakeFiles/acados.dir/dense_qp/dense_qp_hpipm.c.o[0m
 [ 80%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_common.c.o[0m
+[ 80%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_bgh.c.o[0m
 [ 80%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_bgp.c.o[0m
+[ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_common.c.o[0m
+[ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_external.c.o[0m
 [ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_common.c.o[0m
-[ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_conl.c.o[0m
-[ 82%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_common.c.o[0m
-[ 82%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_external.c.o[0m
+[ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_ls.c.o[0m
+[ 81%] [32mBuilding C object acados/CMakeFiles/acados.dir/dense_qp/dense_qp_common.c.o[0m
+[ 82%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_conl.c.o[0m
+[ 82%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_ddp.c.o[0m
 [ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_nls.c.o[0m
-[ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_constraints_bgh.c.o[0m
-[ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_cost_ls.c.o[0m
-[ 83%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_ddp.c.o[0m
 [ 84%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_dynamics_common.c.o[0m
 [ 84%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_dynamics_cont.c.o[0m
 [ 84%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_nlp/ocp_nlp_dynamics_disc.c.o[0m
@@ -294,8 +316,8 @@
 [ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/ocp_qp/ocp_qp_xcond_solver.c.o[0m
 [ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_collocation_utils.c.o[0m
 [ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_common.c.o[0m
-[ 93%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_gnsf.c.o[0m
 [ 94%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_erk_integrator.c.o[0m
+[ 94%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_gnsf.c.o[0m
 [ 95%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_irk_integrator.c.o[0m
 [ 95%] [32mBuilding C object acados/CMakeFiles/acados.dir/sim/sim_lifted_irk_integrator.c.o[0m
 [ 95%] [32mBuilding C object acados/CMakeFiles/acados.dir/utils/external_function_generic.c.o[0m
