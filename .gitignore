@@ -2,7 +2,3 @@ devel/
 build/
 logs/
 .catkin_tools/
-src/
-acados/
-install/
-log/
