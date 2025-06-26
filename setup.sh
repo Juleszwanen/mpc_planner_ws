@@ -5,6 +5,7 @@ export VENV_PATH="/workspace/poetry"
 
 # Import repositories from vcs file
 echo "Cloning repositories ..."
+# make a source directory
 mkdir -p src
 vcs import < planner.repos src --recursive 
 # vcs import < lab.repos src --recursive # Uncomment to clone lab packages
