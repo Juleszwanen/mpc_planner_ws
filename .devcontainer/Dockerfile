@@ -28,8 +28,8 @@ RUN apt-get update && apt-get install -y \
     python3-catkin-tools \
     python3.8-venv \
     iproute2 \
-    #Jules: you added this ros-noetic-rosbrdige-server
-    ros-noetic-rosbridge-server\
+    #Jules: you added this ros-noetic-rosbrdige-suite
+    ros-noetic-rosbridge-suite\
     && rm -rf /var/lib/apt/lists/*
 
 # Setup ROS environment
