@@ -20,10 +20,13 @@
             "ms-vscode.cpptools",
             "ms-vscode.cpptools-extension-pack",
             "ms-vscode.cmake-tools"
+
+
         ]}
     },
     "remoteEnv": {
-        "DISPLAY": "${localEnv:DISPLAY}"
+        "DISPLAY": "${localEnv:DISPLAY}",
+        "DISABLE_ROS1_EOL_WARNINGS": "1"
     },
     "runArgs": [
 		"--network=host",
@@ -34,7 +37,7 @@
 		"--volume=/dev/input:/dev/input",
 		"--volume=/etc/localtime:/etc/localtime",
 		"--ipc=host",
-        "--runtime=nvidia", // Comment if no nvidia runtime is available
+        //"--runtime=nvidia", // Comment if no nvidia runtime is available
 		"--privileged"
     ]
 }

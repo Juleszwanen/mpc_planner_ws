@@ -1,4 +1,7 @@
 devel/
 build/
 logs/
+acados/
+bagfiles/
+src/
 .catkin_tools/

@@ -39,6 +39,17 @@
             "problemMatcher": "$gcc"
         },
         {
+            "label": "guidance_planner_multi_robot_nodes: build",
+            "detail": "Build the multi_robot_nodes package",
+            "type": "shell",
+            "command": "./build_other_packages.sh guidance_planner_multi_robot_nodes",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
             "label": "JackalSimulator: Run Simulator",
             "command": "source /opt/ros/noetic/setup.sh && source /workspace/devel/setup.bash && source /workspace/fix_console.sh && roslaunch mpc_planner_jackalsimulator ros1_jackalsimulator.launch",
             "type": "shell",
@@ -52,6 +63,22 @@
                 "focus": true,
                 // "close": true
             }
+        },
+
+        {
+         "label": "JulesJackalSimulator: Run Simulator",
+            "command": "source /opt/ros/noetic/setup.sh && source /workspace/devel/setup.bash && source /workspace/fix_console.sh && roslaunch bring_up_multi_robot_scenarios ros1_launch_multiple_jack_world_v2.launch",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }   
         },
         // ROS Navigation Stack
         {

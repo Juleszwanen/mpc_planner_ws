@@ -87,12 +87,13 @@ cd ../..
 echo "Poetry is installed."
 cd /workspace/src/mpc_planner
 python3 -m poetry install --no-interaction --no-root
-python3 -m poetry add -e /workspace/acados/interfaces/acados_template
+python3 -m poetry add -e /workspace/acados/interfaces/acados_template 
+
 cd ../..
 echo "Done."
 
 
 # Install dependencies
 sudo apt-get update -y
-rosdep update
+rosdep update --include-eol-distros
 rosdep install -y -r --from-paths src --ignore-src --rosdistro $ROS_DISTRO

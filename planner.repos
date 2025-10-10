@@ -1,12 +1,10 @@
 repositories:
     mpc_planner:
         type: git
-        url: https://github.com/tud-amr/mpc_planner.git
-        version: cc71e45fcd8263b1a43d2af500c3696860b4b8a5
+        url: https://github.com/Juleszwanen/oscar_mpc_planner_mr_modification.git
     guidance_planner:
         type: git
-        url: https://github.com/tud-amr/guidance_planner.git
-        version: 2c4188371e18e2fb3d083e0867b5e4d537a42860
+        url: https://github.com/Juleszwanen/guidance_planner_mr_modifications.git      
     ros_tools:
         type: git
         url: https://github.com/oscardegroot/ros_tools.git
@@ -21,12 +19,10 @@ repositories:
         version: 8b5d63483089faf8535bf51e2061cda2c773fd37
     roadmap:
         type: git
-        url: https://github.com/oscardegroot/roadmap.git
-        version: a82d1cb93a60d0fdf19e8cee8bf0b63aa3b61e1d
+        url: https://github.com/Juleszwanen/roadmap.git
     jackal_simulator:
         type: git
-        url: https://github.com/oscardegroot/jackal_simulator.git
-        version: 70f32759a97c08829faa9f30805fee6b9ba2e9fa
+        url: https://github.com/Juleszwanen/jackal_simulator_mr_modifcations.git
     asr_rapidxml:
         type: git
         url: https://github.com/oscardegroot/asr_rapidxml.git

@@ -37,6 +37,7 @@ else
 fi
 
 BUILD_TYPE=RelWithDebInfo # Release, Debug, RelWithDebInfo, MinSizeRel
-catkin config --cmake-args -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DPYTHON_VERSION=3
+catkin config --cmake-args -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DPYTHON_VERSION=3 
 
 catkin build mpc_planner_$1
+
