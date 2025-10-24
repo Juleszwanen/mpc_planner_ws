@@ -32,6 +32,10 @@ RUN apt-get update && apt-get install -y \
     ros-noetic-rosbridge-suite\
     && rm -rf /var/lib/apt/lists/*
 
+# Install Python packages globally
+# This python package is for the middelware communication between rosmasters
+RUN python3 -m pip install pyzmq  
+
 # Setup ROS environment
 RUN echo "source /opt/ros/noetic/setup.bash" >> /root/.bashrc
 RUN echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/workspace/acados/lib" >> /root/.bashrc
