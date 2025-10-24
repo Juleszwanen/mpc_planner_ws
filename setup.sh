@@ -4,11 +4,11 @@ set -e
 export VENV_PATH="/workspace/poetry"
 
 # Import repositories from vcs file
-echo "Cloning repositories ..."
-mkdir -p src
-vcs import < planner.repos src --recursive 
-# vcs import < lab.repos src --recursive # Uncomment to clone lab packages
-echo "Done cloning repositories."
+# echo "Cloning repositories ..."
+# mkdir -p src
+# vcs import < planner.repos src --recursive 
+# # vcs import < lab.repos src --recursive # Uncomment to clone lab packages
+# echo "Done cloning repositories."
 
 # Switch to ROS1 mode
 echo "Switching to ROS 1 ..."

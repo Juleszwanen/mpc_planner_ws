@@ -79,5 +79,6 @@
     "regex": "cpp",
     "cfenv": "cpp",
     "strstream": "cpp"
-  }
+  },
+  "cmake.sourceDirectory": "/workspace/acados/acados"
 }
