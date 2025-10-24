@@ -24,6 +24,11 @@ repositories:
         url: https://github.com/Juleszwanen/bring_up_multi_robot_scenarios
         version: main
 
+    guidance_planner_multi_robot_nodes:
+        type: git
+        url: https://github.com/Juleszwanen/guidance_planner_muli_robot_nodes.git
+        version: publish_in_obstacle_callback_no_timer
+
 #Jules: These are packages you will probably not touch
     asr_rapidxml:
         type: git
