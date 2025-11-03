@@ -7,7 +7,7 @@ export VENV_PATH="/workspace/poetry"
 # echo "Cloning repositories ..."
 # mkdir -p src
 # vcs import < planner.repos src --recursive 
-# # vcs import < lab.repos src --recursive # Uncomment to clone lab packages
+vcs import < lab.repos src --recursive # Uncomment to clone lab packages
 # echo "Done cloning repositories."
 
 # Switch to ROS1 mode
