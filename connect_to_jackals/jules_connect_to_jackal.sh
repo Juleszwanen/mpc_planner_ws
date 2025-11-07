@@ -14,7 +14,7 @@ JACKAL_NAME=$1
 case $JACKAL_NAME in
     jackal1)
         # Jackal 1
-        export ROS_MASTER_URI=http://192.168.0.101:11311
+        export ROS_MASTER_URI=http://cpr-j100-0114:11311
         echo "Connected to Jackal 1: $ROS_MASTER_URI"
         ;;
     jackal2)
