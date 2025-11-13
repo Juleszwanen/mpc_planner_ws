@@ -170,6 +170,36 @@
             "problemMatcher": "$gcc"
         },
         {
+            "label": "Jackal1: Run Real-World Jackal1",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal1 && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg.launch jackal_name:=jackal1",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal2: Run Real-World Jackal2",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg.launch jackal_name:=jackal2",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
             "label": "Jackal: Run Real-World Jackal",
             "command": "source ./connect_to_jackal.sh && source devel/setup.bash && source fix_console.sh && roslaunch mpc_planner_jackal ros1_jackal.launch",
             "type": "shell",
@@ -184,5 +214,6 @@
                 // "close": true
             }
         },
+        
     ]
 }

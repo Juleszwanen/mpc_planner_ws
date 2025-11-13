@@ -1,6 +1,6 @@
 {
   "editor.formatOnSave": true,
-  // Point IntelliSense to your build’s compile_commands.json
+
   "C_Cpp.default.compileCommands": "${workspaceFolder}/compile_commands.json",
   "C_Cpp.default.compilerPath": "/usr/bin/g++",
   "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
@@ -79,5 +79,6 @@
     "regex": "cpp",
     "cfenv": "cpp",
     "strstream": "cpp"
-  }
+  },
+  "cmake.sourceDirectory": "/workspace/acados/acados"
 }
