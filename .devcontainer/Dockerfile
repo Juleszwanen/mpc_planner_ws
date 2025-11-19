@@ -17,7 +17,6 @@ RUN groupadd --gid $USER_GID $USERNAME \
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip git wget
-
 # Install necessary dependencies
 RUN apt-get update && apt-get install -y \
     python3-pip \
@@ -28,6 +27,7 @@ RUN apt-get update && apt-get install -y \
     python3-catkin-tools \
     python3.8-venv \
     iproute2 \
+    nano \
     #Jules: you added this ros-noetic-rosbrdige-suite
     ros-noetic-rosbridge-suite\
     && rm -rf /var/lib/apt/lists/*

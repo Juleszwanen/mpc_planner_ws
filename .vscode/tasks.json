@@ -64,9 +64,8 @@
                 // "close": true
             }
         },
-
         {
-         "label": "JulesJackalSimulator: Run Simulator",
+            "label": "JulesJackalSimulator: Run Simulator",
             "command": "source /opt/ros/noetic/setup.sh && source /workspace/devel/setup.bash && source /workspace/fix_console.sh && roslaunch bring_up_multi_robot_scenarios ros1_launch_multiple_jack_world_v2.launch",
             "type": "shell",
             "group": {
@@ -78,7 +77,7 @@
                 "panel": "new",
                 "focus": true,
                 // "close": true
-            }   
+            }
         },
         // ROS Navigation Stack
         {
@@ -185,8 +184,68 @@
             }
         },
         {
+            "label": "Jackal1 tu_delft_laptop: Run Real-World Jackal1",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal1 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg.launch jackal_name:=jackal1 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal1 tu_delft_laptop: Run Only Robots Real-World Jackal1",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal1 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_only_robots.launch jackal_name:=jackal1 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
             "label": "Jackal2: Run Real-World Jackal2",
-            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg.launch jackal_name:=jackal2",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_only_robots.launch jackal_name:=jackal2",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal2 tu_delft_laptop: Run Real-World Jackal2",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_argro_robots.launch jackal_name:=jackal2 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal2 tu_delft_laptop: Run Only Robots Real-World Jackal2",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_only_robots.launch jackal_name:=jackal2 laptop_name:=tu_delft",
             "type": "shell",
             "group": {
                 "kind": "build",
@@ -214,6 +273,20 @@
                 // "close": true
             }
         },
-        
+        {
+            "label": "launch central_agg_middleware tu_delft_laptop",
+            "command": "source devel/setup.bash && roslaunch guidance_planner_multi_robot_nodes launch_central_agg_middleware.launch laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
     ]
 }

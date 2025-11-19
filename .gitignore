@@ -3,5 +3,6 @@ build/
 logs/
 acados/
 bagfiles/
+experiment/
 src/
 .catkin_tools/

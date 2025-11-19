@@ -17,13 +17,12 @@ repositories:
         version: main
     jackal_simulator:
         type: git
-        url: https://github.com/Juleszwanen/jackal_simulator_mr_modifications.git
+        url: https://github.com/Juleszwanen/jackal_simulator_mr_modifcations.git
         version: main
     bring_up_multi_robot_scenarios:
         type: git
         url: https://github.com/Juleszwanen/bring_up_multi_robot_scenarios
         version: main
-
     guidance_planner_multi_robot_nodes:
         type: git
         url: https://github.com/Juleszwanen/guidance_planner_muli_robot_nodes.git
