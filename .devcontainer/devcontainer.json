@@ -5,7 +5,8 @@
     "workspaceFolder": "/workspace",
     "mounts": [
         "source=${localWorkspaceFolder},target=/workspace,type=bind",
-        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind"
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
+        "source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,readonly"
     ],
     "customizations": {
         "vscode": {
