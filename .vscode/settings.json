@@ -74,7 +74,10 @@
     "regex": "cpp",
     "cfenv": "cpp",
     "strstream": "cpp",
-    "shared_mutex": "cpp"
+    "shared_mutex": "cpp",
+    "unordered_set": "cpp",
+    "hash_map": "cpp",
+    "hash_set": "cpp"
   },
   "cmake.sourceDirectory": "/workspace/acados/acados"
 }

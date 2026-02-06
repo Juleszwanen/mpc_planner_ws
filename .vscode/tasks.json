@@ -79,6 +79,54 @@
                 // "close": true
             }
         },
+        {
+            "label": "DEBUG: Attach GDB to ANY crashed/running jackal node",
+            "detail": "Smart attach: finds which jackal node is running and attaches GDB to it",
+            "command": "source /workspace/devel/setup.bash && echo 'Searching for running jackal nodes...' && PIDS=$(pgrep -f 'jules_ros1_jackalplanner' | tr '\\n' ' ') && if [ -z \"$PIDS\" ]; then echo 'ERROR: No jackal nodes running. Start simulation first!'; exit 1; fi && echo \"Found PIDs: $PIDS\" && for PID in $PIDS; do CMDLINE=$(cat /proc/$PID/cmdline 2>/dev/null | tr '\\0' ' '); NAMESPACE=$(echo \"$CMDLINE\" | grep -oP '__ns:=/\\K[^[:space:]]+' || echo 'unknown'); echo \"  PID $PID -> namespace: /$NAMESPACE\"; done && echo '' && read -p 'Enter PID to attach to (or press Enter for first): ' TARGET_PID && if [ -z \"$TARGET_PID\" ]; then TARGET_PID=$(echo $PIDS | awk '{print $1}'); fi && echo \"Attaching to PID: $TARGET_PID\" && echo '=== GDB ATTACH SESSION ===' && echo 'Commands:' && echo '  continue (or c)        - Resume execution' && echo '  backtrace (or bt)      - Show current stack' && echo '  thread apply all bt    - Show ALL threads' && echo '  detach                 - Detach without killing' && echo '  quit                   - Exit GDB' && echo '' && sudo gdb -p $TARGET_PID",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "DEBUG: Enable core dumps and run simulation",
+            "detail": "Enable core dump generation, then run simulation. If it crashes, analyze with 'gdb <executable> <core_file>'",
+            "command": "ulimit -c unlimited && echo 'Core dumps enabled (unlimited size)' && echo 'Core files will be saved to: /tmp/cores/' && mkdir -p /tmp/cores && echo '/tmp/cores/core.%e.%p.%t' | sudo tee /proc/sys/kernel/core_pattern && source /opt/ros/noetic/setup.sh && source /workspace/devel/setup.bash && source /workspace/fix_console.sh && roslaunch bring_up_multi_robot_scenarios ros1_launch_multiple_jack_world_v2.launch",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "DEBUG: Analyze latest core dump",
+            "detail": "Load the most recent core dump file with GDB for post-mortem analysis",
+            "command": "CORE_FILE=$(ls -t /tmp/cores/core.* 2>/dev/null | head -1) && if [ -z \"$CORE_FILE\" ]; then echo 'No core dump found in /tmp/cores/'; echo 'Run \"DEBUG: Enable core dumps and run simulation\" first'; exit 1; fi && echo \"Found core dump: $CORE_FILE\" && EXEC_PATH=/workspace/devel/lib/mpc_planner_jackalsimulator/jules_ros1_jackalplanner && echo \"Executable: $EXEC_PATH\" && echo '' && echo '=== CORE DUMP ANALYSIS ===' && echo 'Commands:' && echo '  backtrace (or bt)      - Show crash location' && echo '  thread apply all bt    - Show ALL thread stacks' && echo '  info threads           - List threads (crashed thread marked with *)' && echo '  frame N                - Jump to frame N' && echo '  print variable         - Inspect variable at crash' && echo '  list                   - Show source code' && echo '' && gdb $EXEC_PATH $CORE_FILE",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "problemMatcher": []
+        },
         // ROS Navigation Stack
         {
             "label": "ROS Navigation: Generate Solver",
@@ -119,21 +167,6 @@
         {
             "label": "ROS Navigation: Run Simulator",
             "command": "source devel/setup.bash && source fix_console.sh && roslaunch mpc_planner_rosnavigation ros1_rosnavigation.launch",
-            "type": "shell",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "new",
-                "focus": true,
-                // "close": true
-            }
-        },
-        {
-            "label": "Run Tests",
-            "command": "source devel/setup.bash && cd src/mpc_planner && python3 -m poetry run python -m pytest solver_generator/test/ --cov-report term --cov-config=solver_generator/test/.coveragerc --cov --cov-fail-under=70", //--cov-report=xml:solver_generator/coverage.xml --cov-config=solver_generator/test/.coveragerc --cov --cov-fail-under=70",
             "type": "shell",
             "group": {
                 "kind": "build",
@@ -259,6 +292,66 @@
             }
         },
         {
+            "label": "Jackal4 tu_delft_laptop: Run Only Real-World jackals 1 and 4",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal4 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_only_robots_1_4.launch jackal_name:=jackal4 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal1 tu_delft_laptop: Run Only Real-World jackals 1 and 4",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal1 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_only_robots_1_4.launch jackal_name:=jackal1 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal1 tu_delft_laptop: Run Dynamic Obs and Robots Real-World Jackal1",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal1 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_dyn_obs_robots.launch jackal_name:=jackal1 laptop_name:=tu_delft num_non_com_obj:=1",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal2 tu_delft_laptop: Run Dynamic Obs and Robots Real-World Jackal2",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_dyn_obs_robots.launch jackal_name:=jackal2 laptop_name:=tu_delft num_non_com_obj:=1",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
             "label": "Jackal: Run Real-World Jackal",
             "command": "source ./connect_to_jackal.sh && source devel/setup.bash && source fix_console.sh && roslaunch mpc_planner_jackal ros1_jackal.launch",
             "type": "shell",
@@ -276,6 +369,96 @@
         {
             "label": "launch central_agg_middleware tu_delft_laptop",
             "command": "source devel/setup.bash && roslaunch guidance_planner_multi_robot_nodes launch_central_agg_middleware.launch laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal1(3JACKS) tu_delft_laptop: Run Only Real-World jackals 1, 2 and 4",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal1 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_3_only_robots.launch jackal_name:=jackal1 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal2(3JACKS) tu_delft_laptop: Run Only Real-World jackals 1, 2 and 4",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_3_only_robots.launch jackal_name:=jackal2 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal4(3JACKS) tu_delft_laptop: Run Only Real-World jackals 1, 2 and 4",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal4 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_3_only_robots.launch jackal_name:=jackal4 laptop_name:=tu_delft",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal1(3JACKS+DYN) tu_delft_laptop: Run 3 Real-World jackals 1, 2, 4 and Dynamic Obs",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal1 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_3_robots_and_dyn_obs.launch jackal_name:=jackal1 laptop_name:=tu_delft num_non_com_obj:=1",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal2(3JACKS+DYN) tu_delft_laptop: Run 3 Real-World jackals 1, 2, 4 and Dynamic Obs",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal2 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_3_robots_and_dyn_obs.launch jackal_name:=jackal2 laptop_name:=tu_delft num_non_com_obj:=1",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                // "close": true
+            }
+        },
+        {
+            "label": "Jackal4(3JACKS+DYN) tu_delft_laptop: Run 3 Real-World jackals 1, 2, 4 and Dynamic Obs",
+            "command": "source ./connect_to_jackals/jules_connect_to_jackal.sh jackal4 tu_delft && source devel/setup.bash && source fix_console.sh && roslaunch guidance_planner_multi_robot_nodes jules_test_real_jackal_arg_3_robots_and_dyn_obs.launch jackal_name:=jackal4 laptop_name:=tu_delft num_non_com_obj:=1",
             "type": "shell",
             "group": {
                 "kind": "build",
